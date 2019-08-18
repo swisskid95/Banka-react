@@ -5,7 +5,7 @@ const TopSection = () => {
   return (
     <div className="top-section">
       <img
-        src="images/menu.svg"
+        src="../../src/assets/images/menu.svg"
         alt="Sidebar open button"
         className="sidebar__open"
       />

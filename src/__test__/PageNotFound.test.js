@@ -1,10 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable no-undef */
-import App from '../components/App';
+import PageNotFound from '../components/PageNotFound';
 
-describe('APP component', () => {
+describe('PageNotFound', () => {
   it('renders correctly', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<PageNotFound />);
 
     expect(wrapper).toMatchSnapshot();
   });

@@ -1,7 +1,7 @@
 import React from 'react';
 import SideNavPanel from '../commons/SideNavPanel';
 
-const TransactionHistoryPage = () => {
+export const TransactionHistoryPage = () => {
   return (
     <main className="container">
       <SideNavPanel />

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`APP component renders correctly 1`] = `
+<BrowserRouter>
+  <ToastContainer
+    autoClose={5000}
+    bodyClassName={null}
+    className={null}
+    closeButton={
+      <CloseButton
+        ariaLabel="close"
+      />
+    }
+    closeOnClick={true}
+    draggable={true}
+    draggablePercent={80}
+    hideProgressBar={false}
+    newestOnTop={false}
+    pauseOnFocusLoss={true}
+    pauseOnHover={true}
+    position="top-right"
+    progressClassName={null}
+    progressStyle={null}
+    role="alert"
+    rtl={false}
+    style={null}
+    toastClassName={null}
+    transition={[Function]}
+  />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(SignupPage)",
+          "type": [Function],
+        }
+      }
+      path="/sign-up"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(LoginPage)",
+          "type": [Function],
+        }
+      }
+      path="/login"
+    />
+    <Route
+      component={[Function]}
+      path="/summary"
+    />
+    <Route
+      component={[Function]}
+      path="/create-account"
+    />
+    <Route
+      component={[Function]}
+      path="/history"
+    />
+    <Route
+      component={[Function]}
+    />
+  </Switch>
+</BrowserRouter>
+`;
