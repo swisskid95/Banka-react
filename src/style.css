@@ -1019,6 +1019,10 @@ button {
     margin: auto;
   }
 
+  .page-not-found {
+    text-align: center;
+  }
+
   .monitor {
     width: 70%;
     margin: 5rem 4rem;

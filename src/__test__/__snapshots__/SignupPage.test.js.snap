@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login in Components Tests renders Sign page In template 1`] = `
+<main
+  className="container__entry"
+>
+  <aside
+    className="sidebar"
+  >
+    <div
+      className="sidebar__close"
+    >
+      ×
+    </div>
+    <h1
+      className="sidebar__title"
+    >
+      Welcome back
+    </h1>
+    <p
+      className="sidebar__text"
+    >
+      Already a member, click on the button below to Sign in to continue your benefits.
+    </p>
+    <a
+      className="sidebar__btn"
+      href="/login"
+      onClick={[Function]}
+    >
+      login
+    </a>
+  </aside>
+  <div
+    className="top-section"
+  >
+    <img
+      alt="Sidebar open button"
+      className="sidebar__open"
+      src="../../src/assets/images/menu.svg"
+    />
+    <a
+      className="logo"
+      href="/"
+      onClick={[Function]}
+    >
+      <h1
+        className="logo"
+      >
+        Banka
+      </h1>
+    </a>
+  </div>
+  <div
+    className="content-title"
+  >
+    <h1
+      className="content-title__text"
+    >
+      sign up
+    </h1>
+  </div>
+  <form
+    className="entry"
+    onSubmit={[Function]}
+  >
+    <div
+      className="field"
+    >
+      <input
+        className="entry__input"
+        id="fullName"
+        name="fullName"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Full Name"
+        required={true}
+        type="text"
+      />
+      <span
+        className="helper-text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        className="entry__input"
+        id="phoneNumber"
+        name="phoneNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Phone Number"
+        required={true}
+        type="tel"
+      />
+      <span
+        className="helper-text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        className="entry__input"
+        id="email"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Email"
+        required={true}
+        type="email"
+      />
+      <span
+        className="helper-text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        className="entry__input"
+        id="password"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Password"
+        required={true}
+        type="password"
+      />
+      <span
+        className="helper-text"
+      />
+    </div>
+    <button
+      className="entry__btn btn btn-secondary"
+      disabled={true}
+      id="submit"
+    >
+      Sign up
+    </button>
+  </form>
+  <div
+    className="switch"
+  >
+    <p>
+      Already a member?
+      <a
+        className="switch__link"
+        href="/login"
+        onClick={[Function]}
+      >
+        Login
+      </a>
+    </p>
+  </div>
+</main>
+`;

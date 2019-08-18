@@ -1,19 +1,13 @@
 import React from 'react';
 import SideNavPanel from '../commons/SideNavPanel';
+import TopSection from '../commons/TopSection';
 
-const SummaryPage = () => {
+export const SummaryPage = () => {
   return (
     <main className="container">
       <SideNavPanel />
       <div className="main-wrapper">
-        <div className="top-section">
-          <img
-            src="../../src/assets/images/menu.svg"
-            alt="Sidebar open button"
-            className="sidebar__open"
-          />
-          <h1 className="logo">Banka</h1>
-        </div>
+        <TopSection />
         <div className="content-title">
           <h1 className="content-title__text">Account summary</h1>
         </div>

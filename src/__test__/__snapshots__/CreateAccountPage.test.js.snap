@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateAccountPage should render correctly 1`] = `
+<main
+  className="container"
+>
+  <SideNavPanel />
+  <div
+    className="main-wrapper"
+  >
+    <TopSection />
+    <div
+      className="content-title"
+    >
+      <h1
+        className="content-title__text"
+      >
+        create account
+      </h1>
+    </div>
+    <form
+      className="entry--closer entry"
+    >
+      <select
+        className="entry__input--account-type entry__input entry__input--bigger"
+        name="account type"
+      >
+        <option
+          disabled={true}
+          selected={true}
+        >
+          Account Type
+        </option>
+        <option
+          value="current"
+        >
+          current
+        </option>
+        <option
+          value="savings"
+        >
+          savings
+        </option>
+      </select>
+      <input
+        className="entry__input entry__input--bigger"
+        name="account-purpose"
+        placeholder="account purpose"
+        type="text"
+      />
+      <button
+        className="btn entry__btn entry__input--bigger"
+      >
+        create account
+      </button>
+    </form>
+  </div>
+</main>
+`;

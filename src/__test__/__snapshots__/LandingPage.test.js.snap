@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<main
+  className="container__entry"
+>
+  <div
+    className="landing__page"
+  >
+    <div
+      className="section-wrapper"
+    >
+      <section
+        className="main-section"
+      >
+        <h1
+          className="logo--big"
+          data-testid="logo"
+        >
+          Banka
+        </h1>
+        <h2
+          className="first-text"
+        >
+          Banking made easier
+        </h2>
+        <p
+          className="second-text"
+        >
+          Banka helps you track all transaction on your account(s)
+        </p>
+        <Link
+          className="cta"
+          to="/sign-up"
+        >
+          SIGN-UP
+           
+        </Link>
+      </section>
+      <section
+        className="infograph-section"
+      >
+        <img
+          alt="infograph"
+          className="monitor"
+          src="../../src/assets/images/infograph.svg"
+        />
+      </section>
+    </div>
+  </div>
+</main>
+`;

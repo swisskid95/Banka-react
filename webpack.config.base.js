@@ -1,8 +1,15 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
-  entry: './src/index.js',
+  entry: ['@babel/polyfill', './src/index.js'],
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: 'bundle.js'
+  },
+  devServer: {
+    historyApiFallback: true
+  },
   module: {
     rules: [
       {
@@ -12,8 +19,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
-        exclude: /node_modules/
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.svg$/,
@@ -36,7 +42,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html'
+      template: './src/index.html'
     })
   ]
 };

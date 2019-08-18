@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavPanel should render correctly 1`] = `
+<aside
+  className="sidebar sidebar--light"
+>
+  <span
+    className="sidebar__close"
+  >
+    ×
+  </span>
+  <div
+    className="avatar"
+  >
+    <img
+      alt="user"
+      className="avatar__img"
+      src="../../src/assets/images/avatar5.png"
+    />
+  </div>
+  <h3
+    className="user-name"
+  >
+    John Doe
+  </h3>
+  <ul
+    className="nav-container"
+  >
+    <li>
+      <NavLink
+        activeStyle={
+          Object {
+            "backgroundColor": "#fff",
+            "color": "#33a19d",
+          }
+        }
+        className="nav"
+        exact={true}
+        to="/summary"
+      >
+        summary
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        activeStyle={
+          Object {
+            "backgroundColor": "#fff",
+            "color": "#33a19d",
+          }
+        }
+        className="nav"
+        to="/history"
+      >
+        history
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        activeStyle={
+          Object {
+            "backgroundColor": "#fff",
+            "color": "#33a19d",
+          }
+        }
+        className="nav"
+        to="/create-account"
+      >
+        new account
+      </NavLink>
+    </li>
+    <li>
+      <Link
+        className="nav  logout"
+        to="/"
+      >
+        sign-out
+      </Link>
+    </li>
+  </ul>
+</aside>
+`;
