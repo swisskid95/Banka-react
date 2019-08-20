@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Login in Components Tests renders Sign page In template 1`] = `
+exports[`Sign up in Components Tests renders Sign page In template 1`] = `
 <main
   className="container__entry"
 >
@@ -36,7 +36,7 @@ exports[`Login in Components Tests renders Sign page In template 1`] = `
     <img
       alt="Sidebar open button"
       className="sidebar__open"
-      src="../../src/assets/images/menu.svg"
+      src="/src/assets/images/menu.svg"
     />
     <a
       className="logo"

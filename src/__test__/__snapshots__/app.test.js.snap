@@ -62,7 +62,15 @@ exports[`APP component renders correctly 1`] = `
       path="/summary"
     />
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(CreateAccountPage)",
+          "type": [Function],
+        }
+      }
       path="/create-account"
     />
     <Route

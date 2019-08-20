@@ -1,14 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CreateAccountPage should render correctly 1`] = `
+exports[`Create account in Components Tests renders create account page In template 1`] = `
 <main
   className="container"
 >
-  <SideNavPanel />
+  <aside
+    className="sidebar sidebar--light"
+  >
+    <span
+      className="sidebar__close"
+    >
+      ×
+    </span>
+    <div
+      className="avatar"
+    >
+      <img
+        alt="user"
+        className="avatar__img"
+        src="/src/assets/images/avatar5.png"
+      />
+    </div>
+    <h3
+      className="user-name"
+    >
+      John Doe
+    </h3>
+    <ul
+      className="nav-container"
+    >
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/summary"
+          onClick={[Function]}
+        >
+          summary
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/history"
+          onClick={[Function]}
+        >
+          history
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/create-account"
+          onClick={[Function]}
+        >
+          new account
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav  logout"
+          href="/"
+          onClick={[Function]}
+        >
+          sign-out
+        </a>
+      </li>
+    </ul>
+  </aside>
   <div
     className="main-wrapper"
   >
-    <TopSection />
+    <div
+      className="top-section"
+    >
+      <img
+        alt="Sidebar open button"
+        className="sidebar__open"
+        src="/src/assets/images/menu.svg"
+      />
+      <a
+        className="logo"
+        href="/"
+        onClick={[Function]}
+      >
+        <h1
+          className="logo"
+        >
+          Banka
+        </h1>
+      </a>
+    </div>
     <div
       className="content-title"
     >
@@ -20,17 +104,13 @@ exports[`CreateAccountPage should render correctly 1`] = `
     </div>
     <form
       className="entry--closer entry"
+      onSubmit={[Function]}
     >
       <select
         className="entry__input--account-type entry__input entry__input--bigger"
-        name="account type"
+        name="type"
+        onBlur={[Function]}
       >
-        <option
-          disabled={true}
-          selected={true}
-        >
-          Account Type
-        </option>
         <option
           value="current"
         >
@@ -44,12 +124,13 @@ exports[`CreateAccountPage should render correctly 1`] = `
       </select>
       <input
         className="entry__input entry__input--bigger"
-        name="account-purpose"
+        name="accountPurpose"
+        onChange={[Function]}
         placeholder="account purpose"
         type="text"
       />
       <button
-        className="btn entry__btn entry__input--bigger"
+        className="btn entry__btn entry__input--bigger "
       >
         create account
       </button>

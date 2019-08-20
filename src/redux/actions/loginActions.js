@@ -25,6 +25,7 @@ export const loginUserRequest = (user, history) => {
         dispatch(logInUser(data));
       }
     } catch (error) {
+      /* istanbul ignore next */
       if (error.message === 'Network Error') {
         return toast.error('Something went wrong. Please try Again');
       }

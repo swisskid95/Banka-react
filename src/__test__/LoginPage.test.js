@@ -89,7 +89,7 @@ describe('Login Async action Tests', () => {
     };
 
     mockAxios.post.mockResolvedValue({
-      status: 200,
+      status: 201,
       data: mockData
     });
     const historyObject = {
@@ -97,7 +97,9 @@ describe('Login Async action Tests', () => {
     };
     await store.dispatch(loginUserRequest(userCredentials, historyObject));
 
-    expect(store.getActions()).toEqual([]);
+    const expectedActions = [{ type: LOGIN_USER, payload: mockData.data }];
+
+    expect(store.getActions()).toEqual(expectedActions);
   });
 
   it('Should Trigger the LOGIN_USER_ERROR dispatch function', async () => {

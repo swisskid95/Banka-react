@@ -15,7 +15,7 @@ exports[`SideNavPanel should render correctly 1`] = `
     <img
       alt="user"
       className="avatar__img"
-      src="../../src/assets/images/avatar5.png"
+      src="/src/assets/images/avatar5.png"
     />
   </div>
   <h3

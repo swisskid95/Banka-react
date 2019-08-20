@@ -74,7 +74,7 @@ export class SignupPage extends Component {
                 your benefits."
           buttonText="login"
         />
-        <TopSection />
+        <TopSection entry={true} />
         <div className="content-title">
           <h1 className="content-title__text">sign up</h1>
         </div>

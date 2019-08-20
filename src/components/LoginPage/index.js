@@ -38,7 +38,7 @@ export class LoginPage extends Component {
           mainText="Not yet a member, click on the button below to Join in the benefits."
           buttonText="sign-up"
         />
-        <TopSection />
+        <TopSection entry={true} />
         <PageTitle name={'login'} />
         <form className="entry" onSubmit={this.handleSubmit}>
           <div className="field">

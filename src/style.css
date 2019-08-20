@@ -75,7 +75,7 @@ body,
 }
 
 .landing__page {
-  background-image: url('./assets/images/bg-landing.jpg');
+  background-image: url('/src/assets/images/bg-landing.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -229,7 +229,7 @@ button {
   width: 70%;
   margin: 1.2rem auto;
   color: #e8e8e8;
-  transition: all 0.3s;
+  transition: all 0.03s;
   font-size: 0.7rem;
 }
 
@@ -331,7 +331,7 @@ button {
   border: 1px solid #707070;
   padding: auto 10px;
   border-radius: 9px;
-  transition: ease-out 0.5s;
+  transition: ease-out 0.005s;
 }
 
 ::placeholder,
@@ -349,7 +349,7 @@ button {
   font-weight: 600;
   font-size: 0.7rem;
   border-radius: 9px;
-  transition: all 0.3s;
+  transition: all 0.003s;
 }
 
 .btn:hover,
@@ -357,8 +357,8 @@ button {
 ::-webkit-scrollbar-thumb:hover,
 .user:hover,
 .cta:hover {
-  opacity: 0.7;
-  transform: scale(0.97);
+  opacity: 0.95;
+  transform: scale(1.001);
   cursor: pointer;
 }
 
@@ -541,7 +541,7 @@ button {
   padding: 0.3rem 1.5rem;
   width: 80%;
   margin: 0.8rem auto;
-  transition: all 0.5s;
+  transition: all 0.005s;
   color: #000;
 }
 
@@ -569,7 +569,7 @@ button {
 ::-webkit-scrollbar-thumb {
   background: #33a19d;
   border-radius: 9px;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.005s;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -808,7 +808,7 @@ button {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.2s;
 }
 
 .modal__title {
@@ -853,7 +853,7 @@ button {
   }
 
   .container__entry {
-    background: #fff url('./assets/images/bg.svg') no-repeat bottom right;
+    background: #fff url('/src/assets/images/bg.svg') no-repeat bottom right;
     background-size: 45%;
   }
 

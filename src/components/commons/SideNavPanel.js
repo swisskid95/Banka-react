@@ -9,7 +9,7 @@ const SideNavPanel = () => {
       <div className="avatar">
         <img
           className="avatar__img"
-          src="../../src/assets/images/avatar5.png"
+          src="/src/assets/images/avatar5.png"
           alt="user"
         />
       </div>

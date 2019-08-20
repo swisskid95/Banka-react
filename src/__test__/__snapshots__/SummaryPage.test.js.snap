@@ -9,15 +9,9 @@ exports[`SummaryPage should render correctly 1`] = `
     className="main-wrapper"
   >
     <TopSection />
-    <div
-      className="content-title"
-    >
-      <h1
-        className="content-title__text"
-      >
-        Account summary
-      </h1>
-    </div>
+    <PageTitle
+      name="Account summary"
+    />
     <div
       className="summary__container"
     >
