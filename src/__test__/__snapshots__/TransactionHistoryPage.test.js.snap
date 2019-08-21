@@ -8,36 +8,17 @@ exports[`TransactionHistoryPage should render correctly 1`] = `
   <div
     className="main-wrapper"
   >
-    <div
-      className="top-section"
-    >
-      <img
-        alt="Sidebar open button"
-        className="sidebar__open"
-        src="../../src/assets/images/menu.svg"
-      />
-      <h1
-        className="logo"
-      >
-        Banka
-      </h1>
-    </div>
-    <div
-      className="content-title"
-    >
-      <h1
-        className="content-title__text"
-      >
-        transaction history
-      </h1>
-    </div>
+    <TopSection />
+    <PageTitle
+      name="transaction history"
+    />
     <div
       className="summary-field summary-field--mini"
     >
       <img
         alt="left arrow navigator"
         className="summary__nav summary__nav--mini"
-        src="../../src/assets/images/left-arrow.svg"
+        src="/src/assets/images/left-arrow.svg"
       />
       <div
         className="summary summary--mini"
@@ -75,27 +56,6 @@ exports[`TransactionHistoryPage should render correctly 1`] = `
         src="../../src/assets/images/right-arrow.svg"
       />
     </div>
-    <form
-      className="entry-history"
-    >
-      <input
-        className=" input-from entry-history__input"
-        name="from"
-        placeholder="from"
-        type="date"
-      />
-      <input
-        className="input-to entry-history__input"
-        name="to"
-        placeholder="to"
-        type="date"
-      />
-      <button
-        className="entry-history__btn btn"
-      >
-        filter with date
-      </button>
-    </form>
     <div
       className="transaction modal__open"
     >

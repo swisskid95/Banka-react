@@ -15,13 +15,21 @@ import signupReducer from '../redux/reducers/authReducer';
 const middleware = [thunk];
 const mockStore = configureMockStore(middleware);
 
+const handleSubmit = jest.fn();
+const handleInputChange = jest.fn();
+
 const renderSignupPage = args => {
   const defaultProps = {
     signUpUserRequest: jest.fn(),
     history: {},
     match: {}
   };
-  const props = { ...defaultProps, ...args };
+  const props = {
+    ...defaultProps,
+    ...args,
+    onSubmit: { handleSubmit },
+    onChange: { handleInputChange }
+  };
   return mount(
     <BrowserRouter>
       <SignupPage {...props} />
@@ -29,27 +37,50 @@ const renderSignupPage = args => {
   );
 };
 
-describe('Login in Components Tests', () => {
+describe('Sign up in Components Tests', () => {
   it('renders Sign page In template', () => {
     const wrapper = renderSignupPage();
     expect(wrapper).toMatchSnapshot();
     expect(wrapper.find('form').length).toBe(1);
   });
 
-  it(`Simulates an onchange event on form email input`, () => {
+  it(`Simulates an onChange event on signup form Fullname input`, () => {
     const wrapper = renderSignupPage();
     wrapper
       .find('input')
       .at(0)
-      .simulate('change', { currentTarget: { value: 'fola@gmail.com' } });
+      .simulate('change', { currentTarget: { value: 'Babatunde Sanusi' } });
   });
 
+  it(`Simulates an onchange event on form email input`, () => {
+    const wrapper = renderSignupPage();
+    wrapper
+      .find('input')
+      .at(1)
+      .simulate('change', {
+        currentTarget: { value: 'babatundesanusi@mail.com' }
+      });
+  });
   it(`Simulates an onchange event on form password input`, () => {
     const wrapper = renderSignupPage();
     wrapper
       .find('input')
       .at(1)
+      .simulate('change', { currentTarget: { value: '' } });
+  });
+  it(`Simulates an onchange event on form password input`, () => {
+    const wrapper = renderSignupPage();
+    wrapper
+      .find('input')
+      .at(2)
       .simulate('change', { currentTarget: { value: 'password' } });
+  });
+  it(`Simulates an onchange event on form password input`, () => {
+    const wrapper = renderSignupPage();
+    wrapper
+      .find('input')
+      .at(3)
+      .simulate('change', { currentTarget: { value: '' } });
   });
   it('Simulates a form submit event', () => {
     const wrapper = renderSignupPage();
@@ -91,15 +122,17 @@ describe('sign Async action Tests', () => {
     };
 
     mockAxios.post.mockResolvedValue({
-      status: 200,
+      status: 201,
       data: mockData
     });
     const historyObject = {
       push: jest.fn()
     };
+
+    const expectedActions = [{ type: SIGN_UP_USER, payload: mockData.data }];
     await store.dispatch(signUpUserRequest(userCredentials, historyObject));
 
-    expect(store.getActions()).toEqual([]);
+    expect(store.getActions()).toEqual(expectedActions);
   });
 
   it('Should Trigger the LOGIN_USER_ERROR dispatch function', async () => {
@@ -129,7 +162,7 @@ describe('signup Reducer Tests', () => {
     const newState = signupReducer(undefined, {});
     expect(newState).toEqual({});
   });
-  it('Should return a new state if it recieves a signup action type', () => {
+  it('Should return a new state if it receive a signup action type', () => {
     const user = {
       firstName: 'fola',
       lastName: 'abass',
@@ -144,7 +177,7 @@ describe('signup Reducer Tests', () => {
     expect(newState).toEqual({ user });
   });
 
-  it('Should return a new state if it recieves a log in error action type', () => {
+  it('Should return a new state if it receives a Signup error action type', () => {
     const error = {
       message: 'invalid email/password'
     };

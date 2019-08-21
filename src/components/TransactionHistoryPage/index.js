@@ -1,27 +1,19 @@
 import React from 'react';
 import SideNavPanel from '../commons/SideNavPanel';
+import TopSection from '../commons/TopSection';
+import PageTitle from '../commons/PageTitle';
 
 export const TransactionHistoryPage = () => {
   return (
     <main className="container">
       <SideNavPanel />
       <div className="main-wrapper">
-        <div className="top-section">
-          <img
-            src="../../src/assets/images/menu.svg"
-            alt="Sidebar open button"
-            className="sidebar__open"
-          />
-          <h1 className="logo">Banka</h1>
-        </div>
-
-        <div className="content-title">
-          <h1 className="content-title__text">transaction history</h1>
-        </div>
+        <TopSection />
+        <PageTitle name="transaction history" />
         <div className="summary-field summary-field--mini">
           <img
             className="summary__nav summary__nav--mini"
-            src="../../src/assets/images/left-arrow.svg"
+            src="/src/assets/images/left-arrow.svg"
             alt="left arrow navigator"
           />
           <div className="summary summary--mini">
@@ -42,21 +34,6 @@ export const TransactionHistoryPage = () => {
             alt="right arrow navigator"
           />
         </div>
-        <form className="entry-history">
-          <input
-            placeholder="from"
-            name="from"
-            type="date"
-            className=" input-from entry-history__input"
-          />
-          <input
-            placeholder="to"
-            name="to"
-            type="date"
-            className="input-to entry-history__input"
-          />
-          <button className="entry-history__btn btn">filter with date</button>
-        </form>
         <div className="transaction modal__open">
           <div className="transaction__col1">
             <p className="transaction__amount">45,000.00</p>

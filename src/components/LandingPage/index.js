@@ -21,7 +21,7 @@ const LandingPage = () => {
           <section className="infograph-section">
             <img
               className="monitor"
-              src="../../src/assets/images/infograph.svg"
+              src="/src/assets/images/infograph.svg"
               alt="infograph"
             />
           </section>

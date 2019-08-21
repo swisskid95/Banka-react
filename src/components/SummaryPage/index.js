@@ -1,6 +1,7 @@
 import React from 'react';
 import SideNavPanel from '../commons/SideNavPanel';
 import TopSection from '../commons/TopSection';
+import PageTitle from '../commons/PageTitle';
 
 export const SummaryPage = () => {
   return (
@@ -8,9 +9,7 @@ export const SummaryPage = () => {
       <SideNavPanel />
       <div className="main-wrapper">
         <TopSection />
-        <div className="content-title">
-          <h1 className="content-title__text">Account summary</h1>
-        </div>
+        <PageTitle name="Account summary" />
         <div className="summary__container">
           <div className="summary summary-card">
             <div className="account-type">

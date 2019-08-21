@@ -43,7 +43,7 @@ exports[`should render correctly 1`] = `
         <img
           alt="infograph"
           className="monitor"
-          src="../../src/assets/images/infograph.svg"
+          src="/src/assets/images/infograph.svg"
         />
       </section>
     </div>
