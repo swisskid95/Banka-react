@@ -1,4 +1,5 @@
 import * as types from '../actions/actionTypes';
+import { isObjEmpty } from '../../utils/validation';
 
 const authReducers = (state = {}, action) => {
   switch (action.type) {
@@ -10,6 +11,12 @@ const authReducers = (state = {}, action) => {
       return { ...state, user: action.payload };
     case types.SIGN_UP_USER_ERROR:
       return { ...state, user: action.payload };
+    case types.SET_CURRENT_USER:
+      return {
+        ...state,
+        isAuthenticated: !isObjEmpty(action.payload),
+        userAuthDetails: action.payload
+      };
     default:
       return state;
   }

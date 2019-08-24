@@ -28,7 +28,7 @@ export class CreateAccountPage extends Component {
     const { isLoading } = this.state;
     return (
       <main className="container">
-        <SideNavPanel />
+        <SideNavPanel user={this.props.user} />
         <div className="main-wrapper">
           <TopSection />
           <div className="content-title">
@@ -65,7 +65,14 @@ export class CreateAccountPage extends Component {
 }
 
 CreateAccountPage.propTypes = {
-  createAccountRequest: PropTypes.func.isRequired
+  createAccountRequest: PropTypes.func,
+  user: PropTypes.object
+};
+
+export const mapStateToProps = state => {
+  return {
+    user: state.users.userAuthDetails
+  };
 };
 
 export const mapDispatchToProps = dispatch => {
@@ -76,6 +83,6 @@ export const mapDispatchToProps = dispatch => {
 };
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(CreateAccountPage);

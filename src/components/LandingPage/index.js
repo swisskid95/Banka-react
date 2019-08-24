@@ -21,7 +21,7 @@ const LandingPage = () => {
           <section className="infograph-section">
             <img
               className="monitor"
-              src="/src/assets/images/infograph.svg"
+              src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/infograph_jpuvrv.svg"
               alt="infograph"
             />
           </section>

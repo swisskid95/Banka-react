@@ -15,13 +15,13 @@ exports[`SideNavPanel should render correctly 1`] = `
     <img
       alt="user"
       className="avatar__img"
-      src="/src/assets/images/avatar5.png"
+      src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
     />
   </div>
   <h3
     className="user-name"
   >
-    John Doe
+    some user
   </h3>
   <ul
     className="nav-container"
@@ -50,20 +50,6 @@ exports[`SideNavPanel should render correctly 1`] = `
           }
         }
         className="nav"
-        to="/history"
-      >
-        history
-      </NavLink>
-    </li>
-    <li>
-      <NavLink
-        activeStyle={
-          Object {
-            "backgroundColor": "#fff",
-            "color": "#33a19d",
-          }
-        }
-        className="nav"
         to="/create-account"
       >
         new account
@@ -72,7 +58,7 @@ exports[`SideNavPanel should render correctly 1`] = `
     <li>
       <Link
         className="nav  logout"
-        to="/"
+        to="/login"
       >
         sign-out
       </Link>

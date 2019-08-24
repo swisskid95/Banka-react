@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const SideNavPanel = () => {
+export const SideNavPanel = ({ user }) => {
   const active = { backgroundColor: '#fff', color: '#33a19d' };
   return (
     <aside className="sidebar sidebar--light">
@@ -9,20 +10,15 @@ const SideNavPanel = () => {
       <div className="avatar">
         <img
           className="avatar__img"
-          src="/src/assets/images/avatar5.png"
+          src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
           alt="user"
         />
       </div>
-      <h3 className="user-name">John Doe</h3>
+      <h3 className="user-name">{`${user.firstname} ${user.lastname}`}</h3>
       <ul className="nav-container">
         <li>
           <NavLink to="/summary" activeStyle={active} className="nav" exact>
             summary
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/history" activeStyle={active} className="nav">
-            history
           </NavLink>
         </li>
         <li>
@@ -31,13 +27,18 @@ const SideNavPanel = () => {
           </NavLink>
         </li>
         <li>
-          <Link to="/" className="nav  logout">
+          <Link to="/login" className="nav  logout">
             sign-out
           </Link>
         </li>
       </ul>
     </aside>
   );
+};
+
+SideNavPanel.propTypes = {
+  user: PropTypes.object,
+  logout: PropTypes.func
 };
 
 export default SideNavPanel;

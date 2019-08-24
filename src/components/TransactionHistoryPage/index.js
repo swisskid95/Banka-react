@@ -13,7 +13,7 @@ export const TransactionHistoryPage = () => {
         <div className="summary-field summary-field--mini">
           <img
             className="summary__nav summary__nav--mini"
-            src="/src/assets/images/left-arrow.svg"
+            src="https://res.cloudinary.com/swisskid95/image/upload/v1566575801/Banka-assets/left-arrow_j7rkn3.svg"
             alt="left arrow navigator"
           />
           <div className="summary summary--mini">
@@ -30,7 +30,7 @@ export const TransactionHistoryPage = () => {
           </div>
           <img
             className="summary__nav summary__nav--mini"
-            src="../../src/assets/images/right-arrow.svg"
+            src="https://res.cloudinary.com/swisskid95/image/upload/v1566575801/Banka-assets/right-arrow_w5gibu.svg"
             alt="right arrow navigator"
           />
         </div>

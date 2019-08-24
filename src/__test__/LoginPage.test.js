@@ -9,7 +9,11 @@ import {
 import thunk from 'redux-thunk';
 import mockAxios from 'axios';
 import configureMockStore from 'redux-mock-store';
-import { LOGIN_USER, LOGIN_USER_ERROR } from '../redux/actions/actionTypes';
+import {
+  LOGIN_USER,
+  LOGIN_USER_ERROR,
+  SET_CURRENT_USER
+} from '../redux/actions/actionTypes';
 import loginReducer from '../redux/reducers/authReducer';
 
 const middleware = [thunk];
@@ -97,7 +101,10 @@ describe('Login Async action Tests', () => {
     };
     await store.dispatch(loginUserRequest(userCredentials, historyObject));
 
-    const expectedActions = [{ type: LOGIN_USER, payload: mockData.data }];
+    const expectedActions = [
+      { type: SET_CURRENT_USER, payload: mockData.data },
+      { type: LOGIN_USER, payload: mockData.data }
+    ];
 
     expect(store.getActions()).toEqual(expectedActions);
   });

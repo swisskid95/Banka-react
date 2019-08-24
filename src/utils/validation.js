@@ -17,6 +17,12 @@ const setValid = field => {
   helperText.style.color = '#4CAF50';
 };
 
+export const isObjEmpty = value =>
+  value === undefined ||
+  value === null ||
+  (typeof value === 'object' && Object.keys(value).length === 0) ||
+  (typeof value === 'string' && value.trim().length === 0);
+
 export const isEmpty = field => {
   if (!field.value.trim()) {
     setInvalid(field, `${field.name} must not be empty`);

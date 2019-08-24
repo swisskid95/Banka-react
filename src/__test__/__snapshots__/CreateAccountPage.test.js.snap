@@ -18,13 +18,13 @@ exports[`Create account in Components Tests renders create account page In templ
       <img
         alt="user"
         className="avatar__img"
-        src="/src/assets/images/avatar5.png"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
       />
     </div>
     <h3
       className="user-name"
     >
-      John Doe
+      undefined undefined
     </h3>
     <ul
       className="nav-container"
@@ -43,16 +43,6 @@ exports[`Create account in Components Tests renders create account page In templ
         <a
           aria-current={null}
           className="nav"
-          href="/history"
-          onClick={[Function]}
-        >
-          history
-        </a>
-      </li>
-      <li>
-        <a
-          aria-current={null}
-          className="nav"
           href="/create-account"
           onClick={[Function]}
         >
@@ -62,7 +52,7 @@ exports[`Create account in Components Tests renders create account page In templ
       <li>
         <a
           className="nav  logout"
-          href="/"
+          href="/login"
           onClick={[Function]}
         >
           sign-out
@@ -79,11 +69,11 @@ exports[`Create account in Components Tests renders create account page In templ
       <img
         alt="Sidebar open button"
         className="sidebar__open"
-        src="/src/assets/images/menu.svg"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
       />
       <a
         className="logo"
-        href="/"
+        href="/summary"
         onClick={[Function]}
       >
         <h1

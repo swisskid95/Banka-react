@@ -58,7 +58,15 @@ exports[`APP component renders correctly 1`] = `
       path="/login"
     />
     <Route
-      component={[Function]}
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(SummaryPage)",
+          "type": [Function],
+        }
+      }
       path="/summary"
     />
     <Route
@@ -72,10 +80,6 @@ exports[`APP component renders correctly 1`] = `
         }
       }
       path="/create-account"
-    />
-    <Route
-      component={[Function]}
-      path="/history"
     />
     <Route
       component={[Function]}
