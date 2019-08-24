@@ -9,7 +9,11 @@ import {
 import thunk from 'redux-thunk';
 import mockAxios from 'axios';
 import configureMockStore from 'redux-mock-store';
-import { SIGN_UP_USER_ERROR, SIGN_UP_USER } from '../redux/actions/actionTypes';
+import {
+  SIGN_UP_USER_ERROR,
+  SIGN_UP_USER,
+  SET_CURRENT_USER
+} from '../redux/actions/actionTypes';
 import signupReducer from '../redux/reducers/authReducer';
 
 const middleware = [thunk];
@@ -129,7 +133,10 @@ describe('sign Async action Tests', () => {
       push: jest.fn()
     };
 
-    const expectedActions = [{ type: SIGN_UP_USER, payload: mockData.data }];
+    const expectedActions = [
+      { type: SET_CURRENT_USER, payload: mockData.data },
+      { type: SIGN_UP_USER, payload: mockData.data }
+    ];
     await store.dispatch(signUpUserRequest(userCredentials, historyObject));
 
     expect(store.getActions()).toEqual(expectedActions);

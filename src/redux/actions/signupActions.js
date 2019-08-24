@@ -1,6 +1,7 @@
 import * as types from './actionTypes';
 import axios from '../../utils/axiosConfig';
 import { toast } from 'react-toastify';
+import { setCurrentUser } from './authAction';
 
 export const signUpUser = user => {
   return { type: types.SIGN_UP_USER, payload: user };
@@ -22,6 +23,7 @@ export const signUpUserRequest = (user, history) => {
           /* istanbul ignore next */
           history.push('/summary');
         }, 3000);
+        dispatch(setCurrentUser(data));
         dispatch(signUpUser(data));
       }
     } catch (error) {

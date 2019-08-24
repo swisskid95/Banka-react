@@ -6,7 +6,7 @@ const TopSection = ({ entry }) => {
   return (
     <div className="top-section">
       <img
-        src="/src/assets/images/menu.svg"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
         alt="Sidebar open button"
         className="sidebar__open"
       />

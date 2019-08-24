@@ -75,7 +75,7 @@ body,
 }
 
 .landing__page {
-  background-image: url('/src/assets/images/bg-landing.jpg');
+  background-image: url('https://res.cloudinary.com/swisskid95/image/upload/v1566575802/Banka-assets/bg-landing_ble74s.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -107,7 +107,7 @@ button {
   height: 100%;
   display: block;
   z-index: 0;
-  background-color: rgba(184, 213, 212, 0.9);
+  background-color: rgba(184, 213, 212, 0.8);
 }
 
 .landing__page * {
@@ -853,7 +853,9 @@ button {
   }
 
   .container__entry {
-    background: #fff url('/src/assets/images/bg.svg') no-repeat bottom right;
+    background: #fff
+      url('https://res.cloudinary.com/swisskid95/image/upload/v1566575799/Banka-assets/bg_ui0guq.svg')
+      no-repeat bottom right;
     background-size: 45%;
   }
 

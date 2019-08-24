@@ -36,7 +36,7 @@ exports[`Sign up in Components Tests renders Sign page In template 1`] = `
     <img
       alt="Sidebar open button"
       className="sidebar__open"
-      src="/src/assets/images/menu.svg"
+      src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
     />
     <a
       className="logo"

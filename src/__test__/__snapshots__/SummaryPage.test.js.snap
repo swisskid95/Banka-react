@@ -1,84 +1,101 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SummaryPage should render correctly 1`] = `
+exports[`Account summary Components Tests renders account summary page In template 1`] = `
 <main
   className="container"
 >
-  <SideNavPanel />
+  <aside
+    className="sidebar sidebar--light"
+  >
+    <span
+      className="sidebar__close"
+    >
+      ×
+    </span>
+    <div
+      className="avatar"
+    >
+      <img
+        alt="user"
+        className="avatar__img"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
+      />
+    </div>
+    <h3
+      className="user-name"
+    >
+      undefined undefined
+    </h3>
+    <ul
+      className="nav-container"
+    >
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/summary"
+          onClick={[Function]}
+        >
+          summary
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/create-account"
+          onClick={[Function]}
+        >
+          new account
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav  logout"
+          href="/login"
+          onClick={[Function]}
+        >
+          sign-out
+        </a>
+      </li>
+    </ul>
+  </aside>
   <div
     className="main-wrapper"
   >
-    <TopSection />
-    <PageTitle
-      name="Account summary"
-    />
+    <div
+      className="top-section"
+    >
+      <img
+        alt="Sidebar open button"
+        className="sidebar__open"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
+      />
+      <a
+        className="logo"
+        href="/summary"
+        onClick={[Function]}
+      >
+        <h1
+          className="logo"
+        >
+          Banka
+        </h1>
+      </a>
+    </div>
+    <div
+      className="content-title"
+    >
+      <h1
+        className="content-title__text"
+      >
+        Account summary
+      </h1>
+    </div>
     <div
       className="summary__container"
     >
-      <div
-        className="summary summary-card"
-      >
-        <div
-          className="account-type"
-        >
-          <p
-            className="account-type__text"
-          >
-            current account
-          </p>
-        </div>
-        <div
-          className="account-number"
-        >
-          <p
-            className="account-number__text"
-          >
-            0005894789
-          </p>
-        </div>
-        <div
-          className="account-balance"
-        >
-          ₦
-          <span
-            className="account-balance__text"
-          >
-            0.00
-          </span>
-        </div>
-      </div>
-      <div
-        className="summary summary-card"
-      >
-        <div
-          className="account-type"
-        >
-          <p
-            className="account-type__text"
-          >
-            savings account
-          </p>
-        </div>
-        <div
-          className="account-number"
-        >
-          <p
-            className="account-number__text"
-          >
-            0005894790
-          </p>
-        </div>
-        <div
-          className="account-balance"
-        >
-          ₦
-          <span
-            className="account-balance__text"
-          >
-            45,000.00
-          </span>
-        </div>
-      </div>
+      LOADING
     </div>
   </div>
 </main>
