@@ -1,6 +1,6 @@
 import * as types from '../actions/actionTypes';
 
-const accountReducer = (state = {}, action) => {
+const userAccountReducer = (state = {}, action) => {
   switch (action.type) {
     case types.ADD_ACCOUNT_DETAILS:
       return {
@@ -22,4 +22,4 @@ const accountReducer = (state = {}, action) => {
   }
 };
 
-export default accountReducer;
+export default userAccountReducer;

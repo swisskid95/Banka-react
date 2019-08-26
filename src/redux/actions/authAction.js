@@ -7,8 +7,10 @@ export const setCurrentUser = decoded => {
   };
 };
 
-export const logout = dispatch => {
+export const logout = () => {
   // remove token
+  /* istanbul ignore next */
   localStorage.removeItem('user');
-  dispatch(setCurrentUser({}));
+  /* istanbul ignore next */
+  setCurrentUser({});
 };

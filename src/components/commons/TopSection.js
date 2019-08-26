@@ -1,6 +1,9 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { toggleMenu } from '../../utils/sideBarOpen';
 
 const TopSection = ({ entry }) => {
   return (
@@ -9,6 +12,7 @@ const TopSection = ({ entry }) => {
         src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
         alt="Sidebar open button"
         className="sidebar__open"
+        onClick={toggleMenu}
       />
       {entry ? (
         <Link to="/" className="logo">

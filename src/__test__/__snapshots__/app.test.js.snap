@@ -82,6 +82,30 @@ exports[`APP component renders correctly 1`] = `
       path="/create-account"
     />
     <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(DepositPage)",
+          "type": [Function],
+        }
+      }
+      path="/deposit"
+    />
+    <Route
+      component={
+        Object {
+          "$$typeof": Symbol(react.memo),
+          "WrappedComponent": [Function],
+          "compare": null,
+          "displayName": "Connect(DepositPage)",
+          "type": [Function],
+        }
+      }
+      path="/withdraw"
+    />
+    <Route
       component={[Function]}
     />
   </Switch>

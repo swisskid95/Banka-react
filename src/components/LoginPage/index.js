@@ -64,6 +64,7 @@ export class LoginPage extends Component {
             <span className="helper-text"></span>
           </div>
           <button
+            disabled={isLoading}
             className={`entry__btn btn ${isLoading ? 'btn-secondary' : ''}`}
           >
             {isLoading ? 'Loading...' : 'Login'}
