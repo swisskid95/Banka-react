@@ -91,7 +91,7 @@ exports[`without customer details in Components Tests renders create account pag
       <h1
         className="content-title__text"
       >
-        deposit
+        withdrawal
       </h1>
     </div>
     <form
@@ -126,9 +126,8 @@ exports[`without customer details in Components Tests renders create account pag
       />
       <button
         className="btn entry__btn entry__input--bigger modal__open"
-        disabled={false}
       >
-        deposit
+        withdraw
       </button>
     </form>
   </div>
@@ -232,7 +231,7 @@ exports[`without customer details in Components Tests renders create account pag
       <h1
         className="content-title__text"
       >
-        deposit
+        withdrawal
       </h1>
     </div>
     <form
@@ -267,9 +266,8 @@ exports[`without customer details in Components Tests renders create account pag
       />
       <button
         className="btn entry__btn entry__input--bigger modal__open"
-        disabled={false}
       >
-        deposit
+        withdraw
       </button>
     </form>
   </div>
@@ -287,7 +285,7 @@ exports[`without customer details in Components Tests renders create account pag
         <h1
           className="content-title__text modal__title"
         >
-          Confirm Deposit
+          Confirm Withdrawal
         </h1>
       </div>
       <div
