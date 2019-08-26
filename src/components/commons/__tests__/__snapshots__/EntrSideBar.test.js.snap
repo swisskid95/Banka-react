@@ -6,6 +6,7 @@ exports[`EntrySideBar should render correctly 1`] = `
 >
   <div
     className="sidebar__close"
+    onClick={[Function]}
   >
     ×
   </div>

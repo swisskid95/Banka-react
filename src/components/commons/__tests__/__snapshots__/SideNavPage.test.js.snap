@@ -6,6 +6,7 @@ exports[`SideNavPanel should render correctly 1`] = `
 >
   <span
     className="sidebar__close"
+    onClick={[Function]}
   >
     ×
   </span>

@@ -9,6 +9,7 @@ exports[`Create account in Components Tests renders create account page In templ
   >
     <span
       className="sidebar__close"
+      onClick={[Function]}
     >
       ×
     </span>
@@ -69,6 +70,7 @@ exports[`Create account in Components Tests renders create account page In templ
       <img
         alt="Sidebar open button"
         className="sidebar__open"
+        onClick={[Function]}
         src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
       />
       <a

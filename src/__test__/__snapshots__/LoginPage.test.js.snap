@@ -9,6 +9,7 @@ exports[`Login in Components Tests renders Login page In template 1`] = `
   >
     <div
       className="sidebar__close"
+      onClick={[Function]}
     >
       ×
     </div>
@@ -36,6 +37,7 @@ exports[`Login in Components Tests renders Login page In template 1`] = `
     <img
       alt="Sidebar open button"
       className="sidebar__open"
+      onClick={[Function]}
       src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
     />
     <a
@@ -95,6 +97,7 @@ exports[`Login in Components Tests renders Login page In template 1`] = `
     </div>
     <button
       className="entry__btn btn "
+      disabled={false}
     >
       Login
     </button>
