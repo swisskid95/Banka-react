@@ -35,7 +35,6 @@ exports[`SideNavPanel should render correctly 1`] = `
           }
         }
         className="nav"
-        exact={true}
         to="/summary"
       >
         summary

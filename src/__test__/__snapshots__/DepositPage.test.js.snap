@@ -1,0 +1,361 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`without customer details in Components Tests renders create account page In template 1`] = `
+<main
+  className="container"
+>
+  <aside
+    className="sidebar sidebar--light"
+  >
+    <span
+      className="sidebar__close"
+    >
+      ×
+    </span>
+    <div
+      className="avatar"
+    >
+      <img
+        alt="user"
+        className="avatar__img"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
+      />
+    </div>
+    <h3
+      className="user-name"
+    >
+      undefined undefined
+    </h3>
+    <ul
+      className="nav-container"
+    >
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/summary"
+          onClick={[Function]}
+        >
+          summary
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/create-account"
+          onClick={[Function]}
+        >
+          new account
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav  logout"
+          href="/login"
+          onClick={[Function]}
+        >
+          sign-out
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <div
+    className="main-wrapper"
+  >
+    <div
+      className="top-section"
+    >
+      <img
+        alt="Sidebar open button"
+        className="sidebar__open"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
+      />
+      <a
+        className="logo"
+        href="/summary"
+        onClick={[Function]}
+      >
+        <h1
+          className="logo"
+        >
+          Banka
+        </h1>
+      </a>
+    </div>
+    <div
+      className="content-title"
+    >
+      <h1
+        className="content-title__text"
+      >
+        deposit
+      </h1>
+    </div>
+    <form
+      className="entry--closer entry"
+      onSubmit={[Function]}
+    >
+      <input
+        className="entry__input entry__input--bigger"
+        name="accountNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="account number"
+        required={true}
+        type="number"
+      />
+      <input
+        className="entry__input entry-deposit__amount entry__input--bigger"
+        name="amount"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="amount"
+        required={true}
+        type="number"
+      />
+      <textarea
+        className="entry__input entry__input--remark entry__input--bigger"
+        name="remarks"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="remark"
+        required={true}
+      />
+      <button
+        className="btn entry__btn entry__input--bigger modal__open"
+      >
+        deposit
+      </button>
+    </form>
+  </div>
+  <div
+    className="modal "
+    onClick={[Function]}
+  >
+    loading ...
+  </div>
+</main>
+`;
+
+exports[`without customer details in Components Tests renders create account page In template 2`] = `
+<main
+  className="container"
+>
+  <aside
+    className="sidebar sidebar--light"
+  >
+    <span
+      className="sidebar__close"
+    >
+      ×
+    </span>
+    <div
+      className="avatar"
+    >
+      <img
+        alt="user"
+        className="avatar__img"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566613597/Banka-assets/defaultAvatar_roxuye.png"
+      />
+    </div>
+    <h3
+      className="user-name"
+    >
+      undefined undefined
+    </h3>
+    <ul
+      className="nav-container"
+    >
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/summary"
+          onClick={[Function]}
+        >
+          summary
+        </a>
+      </li>
+      <li>
+        <a
+          aria-current={null}
+          className="nav"
+          href="/create-account"
+          onClick={[Function]}
+        >
+          new account
+        </a>
+      </li>
+      <li>
+        <a
+          className="nav  logout"
+          href="/login"
+          onClick={[Function]}
+        >
+          sign-out
+        </a>
+      </li>
+    </ul>
+  </aside>
+  <div
+    className="main-wrapper"
+  >
+    <div
+      className="top-section"
+    >
+      <img
+        alt="Sidebar open button"
+        className="sidebar__open"
+        src="https://res.cloudinary.com/swisskid95/image/upload/v1566575800/Banka-assets/menu_ldfqrk.svg"
+      />
+      <a
+        className="logo"
+        href="/summary"
+        onClick={[Function]}
+      >
+        <h1
+          className="logo"
+        >
+          Banka
+        </h1>
+      </a>
+    </div>
+    <div
+      className="content-title"
+    >
+      <h1
+        className="content-title__text"
+      >
+        deposit
+      </h1>
+    </div>
+    <form
+      className="entry--closer entry"
+      onSubmit={[Function]}
+    >
+      <input
+        className="entry__input entry__input--bigger"
+        name="accountNumber"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="account number"
+        required={true}
+        type="number"
+      />
+      <input
+        className="entry__input entry-deposit__amount entry__input--bigger"
+        name="amount"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="amount"
+        required={true}
+        type="number"
+      />
+      <textarea
+        className="entry__input entry__input--remark entry__input--bigger"
+        name="remarks"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="remark"
+        required={true}
+      />
+      <button
+        className="btn entry__btn entry__input--bigger modal__open"
+      >
+        deposit
+      </button>
+    </form>
+  </div>
+  <div
+    className="modal "
+    onClick={[Function]}
+  >
+    <div
+      className="transaction-full"
+      href="#"
+    >
+      <div
+        className="transaction__details__title"
+      >
+        <h1
+          className="content-title__text modal__title"
+        >
+          Confirm Deposit
+        </h1>
+      </div>
+      <div
+        className="transaction-full__main modal__main"
+      >
+        <div
+          className="transaction-full__type transaction-full__section"
+        >
+          <h4
+            className="transaction-full__title"
+          >
+            Account Name
+          </h4>
+          <p
+            className="transaction-full__body"
+          >
+             
+            name name
+          </p>
+        </div>
+        <div
+          className="transaction-full__type transaction-full__section"
+        >
+          <h4
+            className="transaction-full__title"
+          >
+            Account Number
+          </h4>
+          <p
+            className="transaction-full__body"
+          />
+        </div>
+        <div
+          className="transaction-full__type transaction-full__section"
+        >
+          <h4
+            className="transaction-full__title"
+          >
+            Amount
+          </h4>
+          <p
+            className="transaction-full__body"
+          />
+        </div>
+        <div
+          className="transaction-amount transaction-full__section"
+        >
+          <h4
+            className="transaction-full__title"
+          >
+            remark
+          </h4>
+          <p
+            className="transaction-full__body"
+          />
+        </div>
+        <div
+          className="transaction-full__section modal-response"
+        >
+          <button
+            className="btn modal__close action-center__btn btn-secondary"
+            onClick={[Function]}
+          >
+            cancel
+          </button>
+          <button
+            className="btn action-center__btn"
+            onClick={[Function]}
+          >
+            confirm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

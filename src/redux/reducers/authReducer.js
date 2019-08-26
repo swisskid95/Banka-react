@@ -12,6 +12,7 @@ const authReducers = (state = {}, action) => {
     case types.SIGN_UP_USER_ERROR:
       return { ...state, user: action.payload };
     case types.SET_CURRENT_USER:
+      /* istanbul ignore next */
       return {
         ...state,
         isAuthenticated: !isObjEmpty(action.payload),

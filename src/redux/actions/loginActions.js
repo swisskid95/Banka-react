@@ -22,7 +22,9 @@ export const loginUserRequest = (user, history) => {
         dispatch(setCurrentUser(data));
         setTimeout(() => {
           /* istanbul ignore next */
-          history.push('/summary');
+          if (data.type === 'client') history.push('/summary');
+          /* istanbul ignore next */
+          if (data.type === 'staff') history.push('/deposit');
         }, 3000);
         dispatch(logInUser(data));
       }

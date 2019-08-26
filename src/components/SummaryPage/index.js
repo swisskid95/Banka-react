@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { fetchAllAccountRequest } from '../../redux/actions/getAllAccountActions';
-
+import Loader from '../commons/Loader';
 export class SummaryPage extends Component {
   state = {
     isLoading: false
@@ -29,7 +29,7 @@ export class SummaryPage extends Component {
           <PageTitle name="Account summary" />
           <div className="summary__container">
             {this.state.isLoading ? (
-              'LOADING'
+              <Loader />
             ) : typeof accounts === 'string' && accounts.length > 1 ? (
               <div>
                 <h2>

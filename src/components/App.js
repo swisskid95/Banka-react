@@ -8,7 +8,9 @@ import LoginPage from './LoginPage';
 import SummaryPage from './SummaryPage';
 import CreateAccountPage from './CreateAccountPage';
 import { ToastContainer } from 'react-toastify';
-// import PrivateRoute from './PrivateRoute';
+import DepositPage from './DepositPage';
+import WithdrawalPage from './WithdrawalPage';
+import PrivateRoute from './PrivateRoute';
 
 class App extends React.Component {
   render() {
@@ -19,8 +21,10 @@ class App extends React.Component {
           <Route exact path="/" component={LandingPage} />
           <Route path="/sign-up" component={SignupPage} />
           <Route path="/login" component={LoginPage} />
-          <Route path="/summary" component={SummaryPage} />
-          <Route path="/create-account" component={CreateAccountPage} />
+          <PrivateRoute path="/summary" component={SummaryPage} />
+          <PrivateRoute path="/create-account" component={CreateAccountPage} />
+          <PrivateRoute path="/deposit" component={DepositPage} />
+          <PrivateRoute path="/withdraw" component={WithdrawalPage} />
           <Route component={PageNotFound} />
         </Switch>
       </Router>
